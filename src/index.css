@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Grotesk", sans-serif;
+  background: #1e1e1e;
+  color: #f3f4f6;
+}
+
+@layer utilities {
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 0.8s step-end infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(250%);
+    }
+  }
+
+  .animate-loading-bar {
+    animation: loading 0.8s ease infinite;
+  }
+
+  .rotate-box {
+    /* width: 100px;
+    height: 100px; */
+    animation: rotateAnimation 2s infinite ;
+     /* Animation of 3 seconds */
+    /* transform: rotate(30deg);  */
+    /* Initial rotation */
+    /* transform-origin: center; Center the rotation */
+  }
+
+  /* Keyframes for rotation from 180deg to 120deg */
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(-20deg);
+    }
+    33% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(-20deg);
+    }
+  }
+}
