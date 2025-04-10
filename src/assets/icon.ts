@@ -20,7 +20,11 @@ import { FaUbuntu } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
 import { SiTurborepo } from "react-icons/si";
 import { IoLogoCss3 } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
 export {
+  TbBrandLeetcode,
+  FaLinkedin,
   TbBrandCpp,
   DiJavascript,
   SiTypescript,

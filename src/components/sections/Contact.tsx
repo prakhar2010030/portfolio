@@ -1,5 +1,6 @@
 import { ChangeEvent, useState } from "react";
 import emailjs from "emailjs-com";
+import { socialHandle } from "../../assets";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -91,6 +92,16 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+
+        <div className="flex justify-between mt-10">
+          {socialHandle.map((social) => (
+            <div>
+              <a href={social.link} target="blank">
+                <social.icon size={40} className=" text-blue-500 hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition"/>
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
